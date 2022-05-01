@@ -18,3 +18,13 @@ test('should return right result when initial value passed', () => {
   const result = [1, 2, 3].reduce((acc, curr) => acc + curr, 1)
   expect(result).eq(7);
 })
+
+test('this arguments is constant', () => {
+  const arr = [1, 2, 3]
+  const result = arr.reduce((acc, curr, idx, _arr) => {
+    expect(_arr).toStrictEqual(arr)
+    _arr[idx + 1] = acc + curr
+    return acc + curr
+  })
+  expect(result).eq(6);
+})

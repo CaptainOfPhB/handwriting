@@ -9,12 +9,13 @@ function reduce() {
   const callback = arguments[0]
   const hasInitialValue = arguments.length > 1
 
+  const _this = Array.from(this)
   let result = hasInitialValue ? arguments[1] : this[0]
   for (let index = 0; index < this.length; index++) {
     if (!hasInitialValue && index === 0) {
       continue
     }
-    result = callback(result, this[index], index)
+    result = callback(result, this[index], index, _this)
   }
   return result
 }
