@@ -19,11 +19,11 @@ test('should return right result when initial value passed', () => {
   expect(result).eq(7);
 })
 
-test('this arguments is constant', () => {
+test('array arguments is constant', () => {
   const arr = [1, 2, 3]
   const result = arr.reduce((acc, curr, idx, _arr) => {
     expect(_arr).toStrictEqual(arr)
-    _arr[idx + 1] = acc + curr
+    _arr[idx + 1] = acc + 10
     return acc + curr
   })
   expect(result).eq(6);
