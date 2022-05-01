@@ -11,12 +11,12 @@ test('should throw an error when callback is not a function', () => {
 
 test('should return right result when initial value is empty', () => {
   const result = [1, 2, 3].reduce((acc, curr) => acc + curr)
-  expect(result).eq(6);
+  expect(result).eq(6)
 })
 
 test('should return right result when initial value passed', () => {
   const result = [1, 2, 3].reduce((acc, curr) => acc + curr, 1)
-  expect(result).eq(7);
+  expect(result).eq(7)
 })
 
 test('array arguments is constant', () => {
@@ -26,5 +26,5 @@ test('array arguments is constant', () => {
     _arr[idx + 1] = acc + 10
     return acc + curr
   })
-  expect(result).eq(6);
+  expect(result).eq(6)
 })
