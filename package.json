@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Popular handwriting questions in China front-end interview",
   "scripts": {
-    "test": "vitest",
+    "test": "vitest --ui --coverage",
     "test:ui": "vitest --ui",
     "test:run": "vitest run"
   },
@@ -11,6 +11,7 @@
   "license": "MIT",
   "devDependencies": {
     "@vitest/ui": "^0.10.0",
+    "c8": "^7.11.2",
     "vite": "^2.9.6",
     "vitest": "^0.10.0"
   }
