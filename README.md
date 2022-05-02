@@ -6,6 +6,8 @@ Popular handwritten questions in front-end interviews in China.
 
 1. [Implement `Array.prototype.reduce` method](./src/reduce.js)
 2. [Implement `Array.prototype.map` method](./src/map.js)
+3. [Implement `pipe` method](./src/pipe.js)
+4. [Implement `compose` method](./src/compose.js)
 
 ## Run code
 
